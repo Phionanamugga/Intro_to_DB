@@ -1,6 +1,7 @@
+
 SELECT 
     COLUMN_NAME,
-    COLUMN_TYPE,
+    DATA_TYPE,
     IS_NULLABLE,
     COLUMN_KEY,
     COLUMN_DEFAULT,
@@ -8,6 +9,5 @@ SELECT
 FROM 
     INFORMATION_SCHEMA.COLUMNS
 WHERE 
-    TABLE_SCHEMA = DATABASE()
-    AND TABLE_NAME = 'books';
-
+    TABLE_NAME = 'books'
+    AND TABLE_SCHEMA = 'alx_book_store';
